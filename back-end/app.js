@@ -6,6 +6,10 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+const db = require('./config/database')
+
+//db('mongodb+srv://renato:Descarte23@cluster0.rezfw.gcp.mongodb.net/agora_vai?retryWrites=true&w=majority')
+
 var app = express();
 
 app.use(logger('dev'));
